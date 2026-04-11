@@ -3,6 +3,14 @@
 
 Termipedia is basically wikipedia for the terminal
 
+## Dependencies
+
+* curl (you probably have this)
+* jq
+* fzf
+* less
+* sed (you probably have this
+
 ## Installation
 
 ```sh
