@@ -54,6 +54,34 @@ cd Termipedia
 doas/sudo cp termipedia.sh /usr/local/bin/termipedia
 ```
 
+<details>
+<summary>
+Using Nix
+</summary>
+
+Run without installing:
+
+```sh
+nix run github:kantiankant/Termipedia -- <search query>
+# or
+nix shell github:kantiankant/Termipedia
+termipedia <search query>
+```
+
+Install:
+```sh
+nix profile add github:kantiankant/Termipedia
+```
+
+Or add to your NixOS/Home-Manager configuration:
+
+```nix
+inputs.termipedia.url = "github:kantiankant/Termipedia";
+# then include this in your packages
+inputs.termipedia.packages.${system}.termipedia
+```
+</details>
+
 
 ## Usage
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ -z "$1" ]; then
+if [ -z "${1:-}" ]; then
     echo "Usage: termipedia <query>" >&2
     exit 1
 fi
