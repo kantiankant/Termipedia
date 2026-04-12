@@ -14,6 +14,14 @@ apk add curl jq fzf less
 </details>
 
 <details>
+<summary>Void Linux</summary>
+
+```sh
+xbps-install -S curl jq fzf less
+```
+</details>
+
+<details>
 <summary>Arch</summary>
 
 ```sh
