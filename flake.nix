@@ -27,7 +27,7 @@
             runtimeInputs = with pkgs; [ curl jq fzf less ];
 
             # script
-            text = builtins.readFile ./termipedia.sh;
+            text = builtins.readFile ./termipedia;
           };
 
           packages.default = self'.packages."${name}";
